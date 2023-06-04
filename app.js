@@ -31,10 +31,6 @@ app.get('/elements', function (req, res) {
     res.render('elements');
 });
 
-app.get('*', function (req, res) {
-res.sendFile(__dirname + '/public/404.html')
-});
-
   
 app.listen(port, () => {
     console.log(`example app listening at htt_localhost:${port}`)
